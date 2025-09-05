@@ -385,3 +385,21 @@
     box-shadow: 0 0 10px rgb(35, 166, 240), 0 0 20px rgb(35, 166, 240);
   }
 }
+
+
+
+
+
+
+
+.course-content-small h6 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.course-content-small p.small {
+  color: #6c757d; /* muted */
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.2;
+}

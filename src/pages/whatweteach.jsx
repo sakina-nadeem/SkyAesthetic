@@ -6,16 +6,32 @@ const WhatWeTeach = () => {
   const mainCourses = [
     {
       id: 1,
-      title: "LEVEL 4 Diploma in Hair Reduction and Skin Rejuvenation using Laser and IPL Systems",
+      title:
+        "LEVEL 4 Diploma in Hair Reduction and Skin Rejuvenation using Laser and IPL Systems",
       description:
         "Our level 4 diploma in hair reduction and skin rejuvenation with laser and IPL systems provides hands-on training in advanced aesthetic techniques. Master the art of hair reduction and skin rejuvenation, gaining expertise in laser and IPL technology. Ideal for professionals seeking to excel in aesthetics, this qualification ensures proficiency in delivering safe and effective treatments for clients seeking lasting results.",
       image: "/images/laser.jpg",
       date: "05 March 2018",
       comments: 5,
       miniCourses: [
-        { id: 101, title: "Laser Safety Training", image: "/images/laser1.png", date: "06 March 2018", comments: 2 },
-        { id: 102, title: "Skin Rejuvenation Basics", image: "/images/laser2.png", date: "07 March 2018", comments: 3 },
-        { id: 103, title: "IPL Hair Reduction Techniques", image: "/images/laser3.png", date: "08 March 2018", comments: 1 },
+        {
+          id: 101,
+          title: "Laser Safety Training",
+          image: "/images/laser1.png",
+          description: "Essential safety protocols and device handling.",
+        },
+        {
+          id: 102,
+          title: "Skin Rejuvenation Basics",
+          image: "/images/laser2.png",
+          description: "Intro to rejuvenation techniques & client care.",
+        },
+        {
+          id: 103,
+          title: "IPL Hair Reduction Techniques",
+          image: "/images/laser3.png",
+          description: "Core IPL methods for effective hair reduction.",
+        },
       ],
     },
     {
@@ -27,23 +43,54 @@ const WhatWeTeach = () => {
       date: "06 March 2018",
       comments: 8,
       miniCourses: [
-        { id: 201, title: "Color Theory & Pigment Selection", image: "/images/mp1.png", date: "08 March 2018", comments: 4 },
-        { id: 202, title: "Camouflage Techniques", image: "/images/mp2.png", date: "09 March 2018", comments: 5 },
-        { id: 203, title: "Restorative Micropigmentation", image: "/images/mp3.png", date: "10 March 2018", comments: 2 },
+        {
+          id: 201,
+          title: "Color Theory & Pigment Selection",
+          image: "/images/mp1.png",
+          description: "Choose pigments confidently for natural results.",
+        },
+        {
+          id: 202,
+          title: "Camouflage Techniques",
+          image: "/images/mp2.png",
+          description: "Methods to conceal scars and skin irregularities.",
+        },
+        {
+          id: 203,
+          title: "Restorative Micropigmentation",
+          image: "/images/mp3.png",
+          description: "Advanced restorative procedures and case planning.",
+        },
       ],
     },
     {
       id: 3,
-      title: "Level 4 Certificate in Enhancing Eyebrows with Microblading Techniques",
+      title:
+        "Level 4 Certificate in Enhancing Eyebrows with Microblading Techniques",
       description:
         "Our level 4 certificate in enhancing eyebrows with microblading techniques provides focused training in the art of microblading. Gain hands-on experience and theoretical knowledge to master precise eyebrow enhancement techniques. Perfect for individuals passionate about aesthetics, this certification ensures proficiency in creating natural-looking, beautifully defined eyebrows through the artful application of microblading.",
       image: "/images/eyebrows.jpg",
       date: "07 March 2018",
       comments: 4,
       miniCourses: [
-        { id: 301, title: "Microblading Tools & Hygiene", image: "/images/eyebrow1.jpg", date: "11 March 2018", comments: 6 },
-        { id: 302, title: "Brow Mapping & Shaping", image: "/images/eyebrow2.jpg", date: "12 March 2018", comments: 3 },
-        { id: 303, title: "Aftercare & Healing", image: "/images/eyebrow3.jpg", date: "13 March 2018", comments: 2 },
+        {
+          id: 301,
+          title: "Microblading Tools & Hygiene",
+          image: "/images/eyebrow1.jpg",
+          description: "Tool selection, sterilisation & safe practice.",
+        },
+        {
+          id: 302,
+          title: "Brow Mapping & Shaping",
+          image: "/images/eyebrow2.jpg",
+          description: "Precision mapping techniques for perfect brows.",
+        },
+        {
+          id: 303,
+          title: "Aftercare & Healing",
+          image: "/images/eyebrow3.jpg",
+          description: "Client aftercare for best healing results.",
+        },
       ],
     },
     {
@@ -55,9 +102,24 @@ const WhatWeTeach = () => {
       date: "08 March 2018",
       comments: 7,
       miniCourses: [
-        { id: 401, title: "Micropigmentation Equipment", image: "/images/mplevel4.1.jpg", date: "14 March 2018", comments: 4 },
-        { id: 402, title: "Advanced Application Techniques", image: "/images/mplevel4.2.jpg", date: "15 March 2018", comments: 2 },
-        { id: 403, title: "Client Consultation", image: "/images/mplevel4.3.jpg", date: "16 March 2018", comments: 3 },
+        {
+          id: 401,
+          title: "Micropigmentation Equipment",
+          image: "/images/mplevel4.1.jpg",
+          description: "Equipment essentials and maintenance tips.",
+        },
+        {
+          id: 402,
+          title: "Advanced Application Techniques",
+          image: "/images/mplevel4.2.jpg",
+          description: "Precision strokes and depth control methods.",
+        },
+        {
+          id: 403,
+          title: "Client Consultation",
+          image: "/images/mplevel4.3.jpg",
+          description: "How to consult and set client expectations.",
+        },
       ],
     },
     {
@@ -69,9 +131,24 @@ const WhatWeTeach = () => {
       date: "09 March 2018",
       comments: 6,
       miniCourses: [
-        { id: 501, title: "Level 4 Skin Treatments", image: "/images/apl1.jpg", date: "17 March 2018", comments: 3 },
-        { id: 502, title: "Level 5 Advanced Aesthetics", image: "/images/apl2.jpg", date: "18 March 2018", comments: 4 },
-        { id: 503, title: "Level 6 Clinical Applications", image: "/images/apl3.jpg", date: "19 March 2018", comments: 2 },
+        {
+          id: 501,
+          title: "Level 4 Skin Treatments",
+          image: "/images/apl1.jpg",
+          description: "Practical skin treatment foundations.",
+        },
+        {
+          id: 502,
+          title: "Level 5 Advanced Aesthetics",
+          image: "/images/apl2.jpg",
+          description: "Clinical techniques for advanced practice.",
+        },
+        {
+          id: 503,
+          title: "Level 6 Clinical Applications",
+          image: "/images/apl3.jpg",
+          description: "Clinical reasoning and advanced casework.",
+        },
       ],
     },
     {
@@ -83,9 +160,9 @@ const WhatWeTeach = () => {
       date: "10 March 2018",
       comments: 3,
       miniCourses: [
-        { id: 601, title: "Foot Reflexology", image: "/images/r1.jpg", date: "20 March 2018", comments: 4 },
-        { id: 602, title: "Hand Reflexology", image: "/images/r2.jpg", date: "21 March 2018", comments: 2 },
-        { id: 603, title: "Holistic Healing Techniques", image: "/images/r3.jpg", date: "22 March 2018", comments: 3 },
+        { id: 601, title: "Foot Reflexology", image: "/images/r1.jpg", description: "Techniques for foot reflex comfort." },
+        { id: 602, title: "Hand Reflexology", image: "/images/r2.jpg", description: "Hand protocols & session flow." },
+        { id: 603, title: "Holistic Healing Techniques", image: "/images/r3.jpg", description: "Integrative approaches to wellbeing." },
       ],
     },
     {
@@ -97,9 +174,9 @@ const WhatWeTeach = () => {
       date: "11 March 2018",
       comments: 9,
       miniCourses: [
-        { id: 701, title: "Facial Treatments", image: "/images/ab1.jpg", date: "23 March 2018", comments: 5 },
-        { id: 702, title: "Body Massage Techniques", image: "/images/ab2.jpg", date: "24 March 2018", comments: 6 },
-        { id: 703, title: "Advanced Skincare", image: "/images/ab3.png", date: "25 March 2018", comments: 3 },
+        { id: 701, title: "Facial Treatments", image: "/images/ab1.jpg", description: "Signature facial methods." },
+        { id: 702, title: "Body Massage Techniques", image: "/images/ab2.jpg", description: "Relaxation and therapeutic strokes." },
+        { id: 703, title: "Advanced Skincare", image: "/images/ab3.png", description: "Clinical skincare essentials." },
       ],
     },
   ];
@@ -114,9 +191,11 @@ const WhatWeTeach = () => {
         </div>
 
         {mainCourses.map((main, index) => (
-          <div
+          <article
             key={main.id}
-            className={`row mb-5 align-items-center ${index % 2 !== 0 ? "flex-row-reverse" : ""}`}
+            className={`row mb-5 align-items-center ${
+              index % 2 !== 0 ? "flex-row-reverse" : ""
+            }`}
           >
             {/* Big Course */}
             <div className="col-md-8">
@@ -127,17 +206,14 @@ const WhatWeTeach = () => {
                     src={main.image}
                     className="course-main-image"
                     alt={main.title}
+                    loading="lazy"
                   />
                 </div>
 
                 <div className="course-content">
                   <div className="course-meta mb-2">
-                    <span>
-                      <i className="far fa-calendar-alt me-2"></i> {main.date}
-                    </span>
-                    <span className="ms-4">
-                      <i className="far fa-comment me-2"></i> {main.comments}
-                    </span>
+                    <span></span>
+                    <span className="ms-4"></span>
                   </div>
                   <h3>{main.title}</h3>
                   <p>{main.description}</p>
@@ -148,30 +224,31 @@ const WhatWeTeach = () => {
             {/* Mini Courses */}
             <div className="col-md-4">
               {main.miniCourses.map((mini) => (
-                <div key={mini.id} className="course-mini shadow-sm p-2 mb-3 d-flex gap-3">
-                  <div className="image-wrapper-mini">
+                <article
+                  key={mini.id}
+                  className="course-mini shadow-sm p-2 mb-3 d-flex gap-3 align-items-start"
+                >
+                  <div className="image-wrapper-mini flex-shrink-0">
                     <img
                       src={mini.image}
                       className="course-mini-image"
                       alt={mini.title}
+                      loading="lazy"
                     />
                   </div>
                   <div className="course-content-small flex-grow-1">
                     <div className="course-meta-small mb-1">
-                      <span>
-                        <i className="far fa-calendar-alt me-1"></i> {mini.date}
-                      </span>
-                      <span className="ms-2">
-                        <i className="far fa-comment me-1"></i> {mini.comments}
-                      </span>
+                      <span></span>
+                      <span className="ms-2"></span>
                     </div>
                     <h6 className="mb-1">{mini.title}</h6>
-                    <a href="#" className="read-more-link-small">READ MORE</a>
+                    {/* light muted paragraph after title */}
+                    <p className="text-muted small mb-0">{mini.description}</p>
                   </div>
-                </div>
+                </article>
               ))}
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </div>
