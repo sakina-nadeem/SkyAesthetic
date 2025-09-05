@@ -1,0 +1,141 @@
+/* Left side wrapper with dynamic shimmer + pulse */
+.left-side-wrapper {
+  position: relative;
+  width: 746px;
+  height: 448px;
+  flex-shrink: 0;
+  background: url("/img-bg.jpg") center/cover no-repeat;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: transform 0.8s ease;
+}
+
+/* Shimmer lines moving diagonally */
+.shimmer-overlay {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05) 2px,
+    transparent 2px,
+    transparent 10px
+  );
+  animation: shimmerMove 2s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes shimmerMove {
+  0% {
+    transform: translateX(-100%) translateY(-100%);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%);
+  }
+}
+
+/* Color pulse overlay */
+.pulse-overlay {
+  position: absolute;
+  inset: 0;
+  background: #23a6f05e;
+  opacity: 0.4;
+  border-radius: 12px;
+  animation: pulse 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Left content text with gentle float */
+.left-content {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-align: right;
+  animation: floatText 4s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0%,
+  100% {
+    transform: translateY(-50%) translateX(0);
+  }
+  50% {
+    transform: translateY(-52%) translateX(-2px);
+  }
+}
+
+.left-title {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 18.46px;
+  text-transform: uppercase;
+  margin: 0 0 4px 0;
+}
+.left-subtitle {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 28.02px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+.left-text {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  line-height: 140%;
+  max-width: 300px;
+  color: #ffffffc7;
+  margin-left: auto;
+  word-break: break-word;
+  min-height: 40px;
+}
+
+/* Right side partner logos */
+.partner-img {
+  width: 214.7px;
+  height: 152.24px;
+  object-fit: contain;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+.partner-img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.right-side-wrapper {
+  height: 448px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+
+.partner-img {
+  border: 1px solid #ccc;  /* light grey border */
+  padding: 5px;           /* space between image & border */
+  border-radius: 8px;     /* rounded corners (optional) */
+  max-width: 80%;         /* same size for all */
+  height: auto;
+}
+
+.partner-img {
+  border: 1px solid #ccc;        /* border sab me same */
+  padding: 5px;                  /* thoda space */
+  border-radius: 8px;            /* optional rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* shadow sabhi images me */
+  max-width: 80%; 
+  height: auto;
+}

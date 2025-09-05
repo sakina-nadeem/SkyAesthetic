@@ -1,0 +1,98 @@
+/* Import Syne font */
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap");
+
+/* Nav items */
+.custom-nav {
+  font-family: "Syne", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #555555 !important;
+  transition: color 0.3s ease;
+}
+
+.custom-nav:hover {
+  color: #23A6F0 !important;
+}
+
+/* Logo sizing */
+.custom-logo {
+  width: 80px;
+  height: 63px;
+  object-fit: contain;
+}
+
+/* Button styling */
+.custom-btn {
+  width: 190px;
+  height: 40px;
+  border-radius: 2.4px;
+  background-color: #000 !important;
+  color: #fff !important;
+  font-family: "Syne", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.space {
+    padding-right: 7rem !important;
+    padding-left: 7rem !important;
+}
+
+/* Base button style */
+.custom-btn {
+  background: black; /* Default black */
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* Glow + Border animation */
+.custom-btn::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #23A6F05E, #23A6F05E, #23A6F05E);
+  border-radius: 35px;
+  z-index: -1;
+  background-size: 300% 300%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  animation: borderGlow 6s linear infinite;
+}
+
+.custom-btn:hover::before {
+  opacity: 1;
+}
+
+.custom-btn:hover {
+  background: #23A6F05E; /* Hover background */
+  color: black; /* Text black when hover */
+  transform: scale(1.01);
+  box-shadow: 0 6px 20px rgba(28, 146, 214, 0.5);
+}
+
+/* Border glow animation */
+@keyframes borderGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

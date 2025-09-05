@@ -1,0 +1,387 @@
+/* Import Font Awesome for icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+.what-we-teach-section {
+  background-color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Heading */
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #23a6f0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: Syne;
+}
+
+/* Main Course Card */
+.main-course-card {
+  background: #fff;
+  padding: 0;
+  border-radius: 0;
+}
+
+.course-image-container {
+  overflow: hidden;
+}
+
+.course-main-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.course-content {
+  padding: 25px 0;
+}
+
+.course-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.course-date,
+.course-comments {
+  font-size: 0.875rem;
+  color: #6c9bd2;
+  font-weight: 500;
+}
+
+.course-date i,
+.course-comments i {
+  color: #6c9bd2;
+  font-size: 0.8rem;
+}
+
+.course-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.course-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.read-more-link {
+  color: #6c9bd2;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.read-more-link:hover {
+  color: #5a8bc4;
+  text-decoration: none;
+}
+
+/* Small Course Cards */
+.small-course-card {
+  background: #fff;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.course-small-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.course-content-small {
+  padding: 15px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.course-meta-small {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.course-date-small,
+.course-comments-small {
+  font-size: 0.75rem;
+  color: #6c9bd2;
+  font-weight: 500;
+}
+
+.course-date-small i,
+.course-comments-small i {
+  color: #6c9bd2;
+  font-size: 0.7rem;
+}
+
+.course-title-small {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.3;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more-link-small {
+  color: #6c9bd2;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: auto;
+}
+
+.read-more-link-small:hover {
+  color: #5a8bc4;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+  .main-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .course-main-image {
+    height: 250px;
+  }
+
+  .course-content {
+    padding: 20px 0;
+  }
+
+  .small-course-card {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main-heading {
+    font-size: 1.75rem;
+  }
+
+  .course-main-image {
+    height: 200px;
+  }
+
+  .course-title {
+    font-size: 1.25rem;
+  }
+
+  .course-small-image {
+    height: 80px;
+  }
+
+  .course-content-small {
+    height: 80px;
+    padding: 10px;
+  }
+
+  .course-title-small {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .main-heading {
+    font-size: 1.5rem;
+  }
+
+  .course-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .course-meta-small {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .course-comments {
+    margin-left: 0 !important;
+  }
+}
+
+/* IMAGE SIZING + LAYOUT
+   - Big images: consistent aspect ratio (16:9)
+   - Mini images: consistent aspect ratio (4:3) and aligned left of text
+   - Uses overflow:hidden + object-fit:cover so images look perfect and never stretch
+*/
+
+.image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* desktop big image ratio */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.course-main-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Mini course image wrapper and image */
+.image-wrapper-mini {
+  width: 110px; /* fixed mini-image width */
+  aspect-ratio: 4 / 3; /* mini-image ratio */
+  overflow: hidden;
+  border-radius: 8px;
+  flex: 0 0 110px;
+}
+
+.course-mini-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Mini course container */
+.course-mini {
+  align-items: flex-start; /* top alignment */
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+/* Make the right column stack nicely on small screens */
+@media (max-width: 767.98px) {
+  .image-wrapper {
+    aspect-ratio: 4 / 3; /* slightly taller on mobile */
+  }
+
+  .image-wrapper-mini {
+    width: 90px;
+    flex: 0 0 90px;
+  }
+}
+
+/* Optional: small hover polish */
+.course-big:hover .course-main-image {
+  transform: scale(1.02);
+  transition: transform 220ms ease;
+}
+
+.course-mini:hover {
+  transform: translateY(-3px);
+  transition: transform 200ms ease;
+}
+
+/* Small helpers */
+.course-content-small h6 {
+  margin: 0 0 6px 0;
+  font-size: 0.95rem;
+}
+
+.read-more-link-small {
+  font-size: 0.85rem;
+  color: #0d6efd;
+  text-decoration: none;
+}
+.read-more-link-small:hover {
+  text-decoration: underline;
+}
+
+/* Bigger Mini Course Image Wrapper */
+.image-wrapper-mini {
+  width: 160px; /* increased from 110px */
+  aspect-ratio: 4 / 3; /* keeps them proportional */
+  overflow: hidden;
+  border-radius: 10px;
+  flex: 0 0 160px; /* matches width */
+}
+
+/* Mini Course Container */
+.course-mini {
+  display: flex;
+  gap: 15px; /* space between image and text */
+  padding: 12px;
+  align-items: center;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+@media (max-width: 767.98px) {
+  .image-wrapper-mini {
+    width: 120px; /* reduced from 160px for mobile */
+    flex: 0 0 120px;
+  }
+}
+
+/* Wrapper ensures effect stays around image only */
+.course-big .image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Image styling */
+.course-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Hover zoom */
+.course-big:hover .course-main-image {
+  transform: scale(1.05);
+}
+
+/* Blink / Glow Effect */
+.course-big .image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgb(35, 166, 240);
+  box-shadow: #0d6efd;
+  border-radius: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* Glow animation when hovering */
+.course-big:hover .image-wrapper::after {
+  opacity: 1;
+  animation: blinkGlow 1.5s infinite alternate;
+}
+
+/* Keyframes for blinking glow */
+@keyframes blinkGlow {
+  0% {
+    box-shadow: 0 0 10px rgb(35, 166, 240), 0 0 20px rgb(35, 166, 240);
+  }
+  50% {
+    box-shadow: 0 0 20px rgb(35, 166, 240), 0 0 40px rgb(35, 166, 240);
+  }
+  100% {
+    box-shadow: 0 0 10px rgb(35, 166, 240), 0 0 20px rgb(35, 166, 240);
+  }
+}

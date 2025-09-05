@@ -1,0 +1,682 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+
+
+.pricing-page {
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #66d6ea 0%, #23a6f0 100%);
+  padding: 100px 0;
+  color: white;
+  position: relative;
+  font-family: Syne;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+    repeat;
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-buttons .btn {
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.courses-btn {
+  background-color: #000000;
+  color: white ;
+}
+
+.enquire-btn {
+  border: 2px solid black;
+  color: black;
+}
+
+/* Categories Navigation */
+.categories-nav {
+  z-index: 1000;
+}
+
+.category-btn {
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin: 2px;
+}
+
+.category-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Category Header */
+.category-header {
+  border-radius: 20px;
+  padding: 40px;
+  color: white;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: rgb(35, 166, 240);
+}
+
+.category-icon {
+  font-size: 3rem;
+  opacity: 0.9;
+}
+
+.category-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.category-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.category-description {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+/* Course Cards */
+.course-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.course-card.popular {
+  transform: scale(1.02);
+}
+
+.badge-popular,
+.badge-featured {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ffd700;
+  color: #333;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.badge-featured {
+  background: #28a745;
+  color: white;
+}
+
+.card-header {
+  padding: 25px 25px 15px;
+}
+
+.course-level {
+  background: #e9ecef;
+  color: #495057;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.certification-badge {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.course-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.4;
+  margin-top: 15px;
+  min-height: 3.5rem;
+}
+
+.card-body {
+  padding: 0 25px 15px;
+}
+
+.price-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #667eea;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.course-features {
+  margin-bottom: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card-footer {
+  padding: 15px 25px 25px;
+  background: transparent;
+  border: none;
+}
+
+.btn-enroll {
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn-enroll:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* Enquire Section */
+.enquire-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.enquire-section h4 {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.enquire-section p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Payment Section */
+.payment-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.payment-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.payment-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.payment-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  height: 100%;
+}
+
+.payment-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.payment-card.featured-payment {
+  border: 2px solid #667eea;
+  transform: scale(1.05);
+}
+
+.payment-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.payment-card h5 {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.payment-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.featured-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #667eea;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .category-title {
+    font-size: 2rem;
+  }
+
+  .category-header {
+    padding: 30px 20px;
+  }
+
+  .category-icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .category-header {
+    padding: 25px 15px;
+  }
+
+  .category-header .d-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .category-icon {
+    margin-bottom: 15px;
+    margin-right: 0 !important;
+  }
+
+  .course-card {
+    margin-bottom: 20px;
+  }
+
+  .payment-title {
+    font-size: 2rem;
+  }
+
+  .payment-card.featured-payment {
+    transform: none;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .course-name {
+    font-size: 1rem;
+    min-height: auto;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+
+  .hero-buttons .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .categories-nav .d-flex {
+    flex-direction: column;
+  }
+
+  .category-btn {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.course-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.course-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.course-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.course-card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a67d8;
+}
+
+
+/* Course Card Shadow */
+.course-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px; /* slightly rounded corners */
+  overflow: hidden; /* keep badges and elements inside */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.192); /* soft shadow */
+}
+
+/* Hover Effect */
+.course-card:hover {
+  transform: translateY(-5px); /* lift effect */
+  box-shadow: 0 10px 25px rgba(8, 143, 221, 0.671); /* colored shadow on hover */
+}
+
+/* Optional: badges slightly lifted on hover */
+.course-card:hover .badge-popular,
+.course-card:hover .badge-featured {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+}
+
+/* Search Result Banner */
+.search-result-banner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1040;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.search-banner-icon {
+  font-size: 1.2rem;
+  margin-right: 12px;
+  opacity: 0.9;
+}
+
+.search-banner-text h6 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.search-banner-text p {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.btn-close-banner {
+  position: absolute;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  padding: 8px;
+}
+
+.btn-close-banner:hover {
+  opacity: 1;
+}
+
+/* Active Category Navigation */
+.category-btn.active {
+  background-color: #667eea !important;
+  color: white !important;
+  border-color: #667eea !important;
+}
+
+/* Enhanced Highlighted Course Styles */
+.course-highlighted {
+  border: 3px solid #667eea !important;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e0f2fe 100%) !important;
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.25) !important;
+  animation: highlightPulse 3s ease-in-out infinite;
+  position: relative;
+  transform: scale(1.02);
+}
+
+@keyframes highlightPulse {
+  0%, 100% {
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.25);
+  }
+  50% {
+    box-shadow: 0 25px 70px rgba(102, 126, 234, 0.4);
+  }
+}
+
+.highlighted-indicator {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  z-index: 10;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.highlight-pulse {
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translateY(-50%) scale(1.2);
+  }
+}
+
+.highlighted-category {
+  animation: categoryHighlight 2s ease-in-out;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+@keyframes categoryHighlight {
+  0% {
+    background-color: rgba(102, 126, 234, 0.1);
+    transform: translateY(-5px);
+  }
+  100% {
+    background-color: transparent;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments for highlighted elements */
+@media (max-width: 768px) {
+  .search-result-banner {
+    padding: 8px 0;
+  }
+  
+  .search-banner-text h6 {
+    font-size: 13px;
+  }
+  
+  .search-banner-text p {
+    font-size: 11px;
+  }
+  
+  .highlighted-indicator {
+    font-size: 0.75rem;
+    padding: 6px 16px;
+    top: -12px;
+  }
+  
+  .course-highlighted {
+    transform: none;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .search-banner-icon {
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+  
+  .btn-close-banner {
+    position: static;
+    margin-top: 8px;
+  }
+  
+  .highlighted-indicator {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-bottom: 15px;
+    align-self: center;
+  }
+}
