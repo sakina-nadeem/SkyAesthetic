@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./WhyChooseUs.css"; // custom css file
+import "./whychooseus.css"; // custom css file
 
 export default function WhyChooseUs() {
   return (

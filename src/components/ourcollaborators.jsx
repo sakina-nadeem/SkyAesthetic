@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./OurCollaborators.css";
+import "./ourcollaborators.css";
 
 export default function OurCollaborators() {
   const [typedText, setTypedText] = useState("");

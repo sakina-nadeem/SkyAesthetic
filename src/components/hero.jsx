@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Hero.css";
+import "./hero.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 

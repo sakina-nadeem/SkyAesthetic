@@ -1,7 +1,7 @@
 // src/pages/AboutUs.js
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Aboutus.css";
+import "./aboutus.css";
 
 export default function AboutUs() {
   return (
