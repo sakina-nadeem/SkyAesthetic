@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./whatweteach.css";
+import { Link } from "react-router-dom";
 
 const WhatWeTeach = () => {
   const mainCourses = [
@@ -160,9 +161,24 @@ const WhatWeTeach = () => {
       date: "10 March 2018",
       comments: 3,
       miniCourses: [
-        { id: 601, title: "Foot Reflexology", image: "/images/r1.jpg", description: "Techniques for foot reflex comfort." },
-        { id: 602, title: "Hand Reflexology", image: "/images/r2.jpg", description: "Hand protocols & session flow." },
-        { id: 603, title: "Holistic Healing Techniques", image: "/images/r3.jpg", description: "Integrative approaches to wellbeing." },
+        {
+          id: 601,
+          title: "Foot Reflexology",
+          image: "/images/r1.jpg",
+          description: "Techniques for foot reflex comfort.",
+        },
+        {
+          id: 602,
+          title: "Hand Reflexology",
+          image: "/images/r2.jpg",
+          description: "Hand protocols & session flow.",
+        },
+        {
+          id: 603,
+          title: "Holistic Healing Techniques",
+          image: "/images/r3.jpg",
+          description: "Integrative approaches to wellbeing.",
+        },
       ],
     },
     {
@@ -174,9 +190,24 @@ const WhatWeTeach = () => {
       date: "11 March 2018",
       comments: 9,
       miniCourses: [
-        { id: 701, title: "Facial Treatments", image: "/images/ab1.jpg", description: "Signature facial methods." },
-        { id: 702, title: "Body Massage Techniques", image: "/images/ab2.jpg", description: "Relaxation and therapeutic strokes." },
-        { id: 703, title: "Advanced Skincare", image: "/images/ab3.png", description: "Clinical skincare essentials." },
+        {
+          id: 701,
+          title: "Facial Treatments",
+          image: "/images/ab1.jpg",
+          description: "Signature facial methods.",
+        },
+        {
+          id: 702,
+          title: "Body Massage Techniques",
+          image: "/images/ab2.jpg",
+          description: "Relaxation and therapeutic strokes.",
+        },
+        {
+          id: 703,
+          title: "Advanced Skincare",
+          image: "/images/ab3.png",
+          description: "Clinical skincare essentials.",
+        },
       ],
     },
   ];
@@ -200,7 +231,6 @@ const WhatWeTeach = () => {
             {/* Big Course */}
             <div className="col-md-8">
               <div className="course-big shadow p-3">
-                {/* image wrapper for fixed aspect ratio */}
                 <div className="image-wrapper">
                   <img
                     src={main.image}
@@ -236,17 +266,30 @@ const WhatWeTeach = () => {
                       loading="lazy"
                     />
                   </div>
+
                   <div className="course-content-small flex-grow-1">
                     <div className="course-meta-small mb-1">
                       <span></span>
                       <span className="ms-2"></span>
                     </div>
+
                     <h6 className="mb-1">{mini.title}</h6>
-                    {/* light muted paragraph after title */}
                     <p className="text-muted small mb-0">{mini.description}</p>
                   </div>
                 </article>
               ))}
+             
+              {main.miniCourses && main.miniCourses.length > 0 && (
+                <div className="text-center mt-3">
+                  <Link
+                    to="/pricing"
+                    className="btn btn-primary view-all-btn"
+                    aria-label="View all courses"
+                  >
+                    View all courses
+                  </Link>
+                </div>
+              )}
             </div>
           </article>
         ))}

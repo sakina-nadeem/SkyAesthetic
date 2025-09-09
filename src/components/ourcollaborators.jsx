@@ -80,32 +80,20 @@ export default function OurCollaborators() {
         <div className="d-flex justify-content-center align-items-center flex-grow-1 right-side-wrapper">
           <div className="row w-100 justify-content-center align-items-center">
             <div className="col-6 col-md-3 d-flex justify-content-center mb-3 mb-md-0">
-              <img
-                src="/partner1.png"
-                alt="Partner 1"
-                className="partner-img img-fluid"
-              />
+              <img src="/partner3.png" alt="Partner 1" className=" img-fluid" />
+            </div>
+            <div className="col-6 col-md-3 d-flex justify-content-center mb-3 mb-md-0">
+              <img src="/partner2.png" alt="Partner 2" className=" img-fluid" />
+            </div>
+            <div className="col-6 col-md-3 d-flex justify-content-center mb-3 mb-md-0">
+              <img src="/partner1.png" alt="Partner 3" className=" img-fluid" />
             </div>
             <div className="col-6 col-md-3 d-flex justify-content-center mb-3 mb-md-0">
               <img
-                src="/partner2.png"
-                alt="Partner 2"
-                className="partner-img img-fluid"
-              />
-            </div>
-            <div className="col-6 col-md-3 d-flex justify-content-center mb-3 mb-md-0">
-              <img
-                src="/partner3.png"
-                alt="Partner 3"
-                className="partner-img img-fluid"
-              />
-            </div>
-            <div className="col-6 col-md-3 d-flex justify-content-center mb-3 mb-md-0">
-              <img
-              style={{height: "70%", width: "70%",}}
+                style={{ height: "70%", width: "70%" }}
                 src="/partner4.png"
                 alt="Partner 4"
-                className="partner-img img-fluid"
+                className="img img-fluid"
               />
             </div>
           </div>

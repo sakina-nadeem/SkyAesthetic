@@ -23,17 +23,20 @@ export default function ContactUs() {
     setStatus(null);
 
     if (!form.name || !form.email || !form.message) {
-      setStatus({ type: "error", text: "Please fill name, email and message." });
+      setStatus({
+        type: "error",
+        text: "Please fill name, email and message.",
+      });
       return;
     }
 
     setSending(true);
 
-    // ---- EmailJS integration ----
+    
     emailjs
       .send(
-        "your_service_id", // 🔹 replace with your Service ID
-        "your_template_id", // 🔹 replace with your Template ID
+        "your_service_id", 
+        "your_template_id", 
         {
           from_name: form.name,
           from_email: form.email,
@@ -107,12 +110,15 @@ export default function ContactUs() {
             get in touch with us below.
           </p>
 
-          <div className="d-flex align-items-center" style={{ marginTop: "50px" }}>
+          <div
+            className="d-flex align-items-center"
+            style={{ marginTop: "50px" }}
+          >
             <a
               href="tel:01615265555"
               className="btn blink-hover me-3 d-flex align-items-center"
             >
-              <FaPhoneAlt className="me-2" /> 0161 526 5555
+              <FaPhoneAlt className="me-2" /> +44 123 456 789
             </a>
           </div>
 
@@ -123,7 +129,7 @@ export default function ContactUs() {
               rel="noreferrer"
               className="btn blink-hover d-flex align-items-center"
             >
-              <FaWhatsapp className="me-2" /> 07507 500507
+              <FaWhatsapp className="me-2" /> +44 123 456 789
             </a>
           </div>
         </div>
